@@ -295,25 +295,21 @@ return [
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
-            'can'  => 'isAdmin',
         ],
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
-            'can'  => 'isAdmin',
         ],
 
         // Sidebar items:
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
-            'can'  => 'isAdmin',
         ],
         [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
-            'can'  => 'isAdmin',
         ],
         [
             'text'        => 'pages',
@@ -321,20 +317,17 @@ return [
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
-            'can'  => 'isAdmin',
         ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
-            'can'  => 'isAdmin',
         ],
         [
             'text' => 'change_password',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
-            'can'  => 'isAdmin',
         ],
         [
             'text'    => 'multilevel',
