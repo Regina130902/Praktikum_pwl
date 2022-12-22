@@ -161,7 +161,31 @@
         </div>
     </div>
 </div>
+<!-- MODAL IMPORT DATA FROM -->
+<div class="modal fade" id="importDataModal" tabindex="-1"arial-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Import Data</h5>
+                <button type="button" class="close" data-dismiss="modal" arial-labe="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="form-group">
+                <label for="cover">upload file</label>
+                <input type="file" class="form-control" name="file">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="moal">Batal</button>
+            <button type="submit" class="btn btn-primary">Import Data</button>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
 @stop 
+
 
 @section('js')
     <script>

@@ -27,4 +27,8 @@ class BooksExport implements FromArray, WithHealings, ShouldAutoSize
             'Penerbit'
         ];
     }
+    public function collection()
+    {
+        return Book::all()
+    }
 }
