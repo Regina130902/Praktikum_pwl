@@ -51,6 +51,8 @@ class BookController extends Controller
         ], 200);
     }
     
+    public function update_book(Request $req)
+    {
     $validated = $req->validate([
         'judul' => 'required|max:225',
         'penulis' => 'required',

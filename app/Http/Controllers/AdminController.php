@@ -133,18 +133,6 @@ class AdminController extends Controller
     {
         return Excel::download(new BooksExport, 'books.xlsx');
     }
-
-    class AdminController extends(Request $req)
-    {
-        Excel::import(new BookImport, $req->file('file'));
-
-        $notification = array(
-            'message' => 'Import data berhasil dilakukan',
-            'lert-type' => 'success'
-        );
-
-        return redirect()->route('admin.books')->with($notification);
-    }
     public function import(Request $req)
     {
         Excel::import(new BooksImport, $req->file('file'));
